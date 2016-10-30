@@ -60,6 +60,7 @@ pub struct ENetEvent {
     pub packet: *mut ENetPacket,
 }
 
+#[derive(Copy, Clone, PartialEq, Eq)]
 #[repr(C)]
 pub enum ENetEventType {
     ENET_EVENT_TYPE_NONE = 0,
